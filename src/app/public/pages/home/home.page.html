@@ -1,26 +1,31 @@
 <nav class="shadow bg-accent">
-  <div class="container flex items-center justify-between py-3 mx-auto">
+  <div class="flex items-center justify-between py-3">
     <!-- mobile -->
     <a
       routerLink="/"
       class="block text-2xl font-bold tracking-tighter no-underline cursor-pointer text-body md:hidden"
     >
-      <span class="text-danger-100">A</span> B
+      <span class="text-danger-100">P</span> N
     </a>
 
     <!-- desktop -->
     <a
       routerLink="/"
-      class="hidden text-2xl font-bold no-underline cursor-pointer text-body md:block"
+      class="hidden text-3xl font-bold no-underline cursor-pointer text-body md:block mx-10"
     >
-      <span class="text-danger-100">Angular</span>
-      Boilerplate
+      <span class="text-danger-500">Prop</span>
+      Ninja
     </a>
+
+    <ul class="mr-5 items-center justify-between py-3 nav">
+        <li>Play</li>
+        <li>About us</li>
+    </ul>
 
     <div>
       <a
         [routerLink]="['/', path.SignIn]"
-        class="mr-3 rounded-lg btn btn-neutral"
+        class="mr-3 rounded-lg btn btn-neutral "
       >
         Sign in
       </a>
@@ -33,24 +38,6 @@
 
 <div class="h-full pattern">
   <div class="container flex items-center justify-center h-full">
-    <div class="-mt-20 text-center md:max-w-xl">
-      <h1 i18n class="mb-3">👋 Welcome to Angular Boilerplate.</h1>
-
-      <p i18n class="mb-12 text-xl">
-        ⚒️ Start building your next awesome project. ⚒️
-      </p>
-
-      <p i18n class="text-gray-500">
-        If you need to develop a real-world API using an amazing technology like
-        <a href="https://nestjs.com/">NestJs</a>, you can use the
-        <a
-          href="https://github.com/juanmesa2097/nestjs-boilerplate"
-          target="__blank"
-          >NestJs Boilerplate,</a
-        >
-        which already has authentication, role-based access, file uploading,
-        swagger UI, email sendings, dynamic queries, and much more.
-      </p>
-    </div>
+    
   </div>
 </div>

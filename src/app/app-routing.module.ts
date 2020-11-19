@@ -3,6 +3,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { Path } from './@core/enums/path.enum';
 import { AuthGuard, NoAuthGuard } from './@core/guards';
 import { NotFoundPage } from './public/pages/not-found/not-found.page';
+import { matMenu, MatCheckboxModule } from '@angular/material';
 
 const routes: Routes = [
   // ===== Uncomment if Path.Home is different from empty =====
