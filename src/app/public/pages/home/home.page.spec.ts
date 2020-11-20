@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { MatSliderModule } from '@angular/material/slider';
 
 import { HomePage } from './home.page';
 
@@ -8,7 +9,9 @@ describe('HomePage', () => {
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomePage ]
+      declarations: [ HomePage ],
+      imports:[MatSliderModule]      
+
     })
     .compileComponents();
   }));

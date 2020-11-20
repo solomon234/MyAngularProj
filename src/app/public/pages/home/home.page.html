@@ -1,3 +1,4 @@
+
 <nav class="shadow bg-accent">
   <div class="flex items-center justify-between py-3">
     <!-- mobile -->
@@ -17,12 +18,17 @@
       Ninja
     </a>
 
-    <ul class="mr-5 items-center justify-between py-3 nav">
+     <mat-action-list class="list-horizontal">
+      <button mat-list-item class="btn-danger" >Play</button>
+      <button mat-list-item class="btn-danger" >About Us</button>
+    </mat-action-list> 
+
+    <!-- <ul class="mr-5 items-center justify-between py-3 nav">
         <li>Play</li>
         <li>About us</li>
-    </ul>
+    </ul> -->
 
-    <div>
+    <!-- <div>
       <a
         [routerLink]="['/', path.SignIn]"
         class="mr-3 rounded-lg btn btn-neutral "
@@ -32,12 +38,12 @@
       <a [routerLink]="['/', path.SignUp]" class="rounded-lg btn btn-primary">
         Sign up
       </a>
-    </div>
+    </div> -->
   </div>
 </nav>
 
 <div class="h-full pattern">
   <div class="container flex items-center justify-center h-full">
-    
+
   </div>
 </div>
