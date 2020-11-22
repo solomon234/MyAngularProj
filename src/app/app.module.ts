@@ -7,6 +7,7 @@ import { environment } from '../environments/environment';
 import { CoreModule } from './@core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
     }),
     CoreModule,
     LayoutModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

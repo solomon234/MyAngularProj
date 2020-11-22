@@ -18,15 +18,12 @@
       Ninja
     </a>
 
-     <mat-action-list class="list-horizontal">
-      <button mat-list-item class="btn-danger" >Play</button>
-      <button mat-list-item class="btn-danger" >About Us</button>
-    </mat-action-list> 
+     <mat-list class="list-horizontal">
+      <a class="mat-list-option btn" [routerLink]="['/', path.Play]" mat-list-item >Play</a>
+      <a class="mat-list-option btn" mat-list-item >About Us</a>
+      <!-- <a class="mat-list-option btn" mat-list-item ><fa-icon [icon]="faCoffee"></fa-icon></a> -->
+    </mat-list> 
 
-    <!-- <ul class="mr-5 items-center justify-between py-3 nav">
-        <li>Play</li>
-        <li>About us</li>
-    </ul> -->
 
     <!-- <div>
       <a
@@ -43,7 +40,14 @@
 </nav>
 
 <div class="h-full pattern">
-  <div class="container flex items-center justify-center h-full">
-
+  <div class="container flex justify-center h-full">
+    <div class="hero-image"></div>
+    <div class="hero-text">
+      <h1>Welcome!</h1>      
+      <button [routerLink]="['/', path.Play]" class="btn btn-success btn-lg">Play</button>
+    </div>
+    <div class="flexbox_card">
+      
+    </div>
   </div>
 </div>

@@ -3,7 +3,7 @@ export enum Path {
   Home = '',
   InternalServerError = 'internal-server-error',
   NotFound = '404',
-
+  Play= 'play',
   // Auth
   Auth = '',
   SignIn = 'sign-in',
